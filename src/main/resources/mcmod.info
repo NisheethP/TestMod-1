@@ -1,0 +1,21 @@
+[
+{
+  "modid": "testmod",
+  "name": "Test Mod",
+  "description": "First Test Mod",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Nisheeth"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

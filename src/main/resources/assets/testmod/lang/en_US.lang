@@ -2,4 +2,7 @@
 item.testmod:rock.name=Rock
 
 #blocks
-tile.testmod:superCobble.name = Super Cobble
+tile.testmod:superCobble.name=Super Cobble
+
+#creative_tab
+itemGroup.testmod=Test Mod

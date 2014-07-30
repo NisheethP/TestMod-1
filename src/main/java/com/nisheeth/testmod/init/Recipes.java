@@ -4,9 +4,6 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 
-/**
- * Created by anil on 30-07-2014.
- */
 public class Recipes
 {
     public static void init ()

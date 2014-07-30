@@ -1,5 +1,6 @@
 package com.nisheeth.testmod.item;
 
+import com.nisheeth.testmod.creativetab.CreativeTabTest;
 import com.nisheeth.testmod.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,7 +14,8 @@ public class ItemTest extends Item
 	{
 		super();
 		this.setMaxStackSize(1);
-	}
+        this.setCreativeTab(CreativeTabTest.TEST_TABS);
+    }
 
 	@Override
 	public String getUnlocalizedName()

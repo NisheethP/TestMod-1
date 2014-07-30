@@ -1,7 +1,19 @@
 package com.nisheeth.testmod.creativetab;
 
-/**
- * Created by anil on 30-07-2014.
- */
-public class CreativeTabTest {
+import com.nisheeth.testmod.init.ModItems;
+import com.nisheeth.testmod.reference.Reference;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class CreativeTabTest
+{
+    public static final CreativeTabs TEST_TABS = new CreativeTabs (Reference.MOD_ID)
+    {
+        @Override
+        public Item getTabIconItem()
+        {
+            return ModItems.rock;
+        }
+    };
+
 }

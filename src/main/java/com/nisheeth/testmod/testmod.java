@@ -3,6 +3,7 @@ package com.nisheeth.testmod;
 import com.nisheeth.testmod.handler.ConfigurationHandler;
 import com.nisheeth.testmod.init.ModBlocks;
 import com.nisheeth.testmod.init.ModItems;
+import com.nisheeth.testmod.init.Recipes;
 import com.nisheeth.testmod.proxy.IProxy;
 import com.nisheeth.testmod.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -37,6 +38,7 @@ public class testmod
     @Mod.EventHandler
     public void Init (FMLInitializationEvent event)
     {
+        Recipes.init();
 		LogHelper.info("Intitalization Complete!");
     }
 

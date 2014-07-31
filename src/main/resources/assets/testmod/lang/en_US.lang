@@ -1,5 +1,7 @@
 #items
 item.testmod:rock.name=Rock
+item.testmod:coalIron.name=Coal-Iron Mix
+item.testmod:steel.name=Steel
 
 #blocks
 tile.testmod:superCobble.name=Super Cobble

@@ -1,7 +1,14 @@
 package com.nisheeth.testmod.item;
 
-/**
- * Created by anil on 31-07-2014.
- */
-public class ItemSteelSword {
+
+public class ItemSteelSword extends ItemTest
+{
+    public ItemSteelSword()
+    {
+        super();
+        this.setUnlocalizedName("steelSword");
+        this.setMaxStackSize(1);
+        this.setMaxDamage(1600);
+
+    }
 }

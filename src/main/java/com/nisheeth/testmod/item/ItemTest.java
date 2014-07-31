@@ -13,7 +13,7 @@ public class ItemTest extends Item
 	public ItemTest ()
 	{
 		super();
-		this.setMaxStackSize(1);
+		this.setMaxStackSize(64);
         this.setCreativeTab(CreativeTabTest.TEST_TABS);
     }
 

@@ -2,12 +2,12 @@ package com.nisheeth.testmod.item;
 
 import net.minecraftforge.common.util.EnumHelper;
 
-public class ItemSteel extends ItemTest
+public class ItemSteelIngot extends ItemTest
 {
-    public ItemSteel()
+	public ItemSteelIngot()
     {
         super();
         this.setUnlocalizedName("steel");
-        //EnumHelper.addToolMaterial("Steel", 3, 1600)
+
     }
 }

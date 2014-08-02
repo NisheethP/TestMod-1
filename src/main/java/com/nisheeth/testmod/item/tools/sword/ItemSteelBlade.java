@@ -1,7 +1,13 @@
 package com.nisheeth.testmod.item.tools.sword;
 
-/**
- * Created by Nisheeth on 01-08-2014.
- */
-public class ItemSteelBlade {
+
+import com.nisheeth.testmod.item.ItemTest;
+
+public class ItemSteelBlade extends ItemTest
+{
+	public ItemSteelBlade()
+	{
+		super();
+		this.setUnlocalizedName("steelBlade");
+	}
 }

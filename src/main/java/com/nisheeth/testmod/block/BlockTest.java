@@ -40,5 +40,4 @@ public class BlockTest extends Block
 	{
 		return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
 	}
-
 }

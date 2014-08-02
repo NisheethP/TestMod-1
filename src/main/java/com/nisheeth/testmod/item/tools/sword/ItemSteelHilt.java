@@ -1,7 +1,12 @@
 package com.nisheeth.testmod.item.tools.sword;
 
-/**
- * Created by Nisheeth on 01-08-2014.
- */
-public class ItemSteelHilt {
+import com.nisheeth.testmod.item.ItemTest;
+
+public class ItemSteelHilt extends ItemTest
+{
+	public ItemSteelHilt()
+	{
+		super();
+		this.setUnlocalizedName("steelHilt");
+	}
 }

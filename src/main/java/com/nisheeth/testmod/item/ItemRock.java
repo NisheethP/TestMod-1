@@ -6,6 +6,6 @@ public class ItemRock extends ItemTest
 	{
 		super();
 		this.setUnlocalizedName("rock");
-		this.setMaxStackSize(32);
+		this.setMaxStackSize(64);
 	}
 }

@@ -23,16 +23,25 @@ public class Recipes
 		ItemStack superCobbleStack = new ItemStack(ModBlocks.superCobble);
 		ItemStack coalIronStack = new ItemStack(ModItems.coalIron);
 		ItemStack steelStack = new ItemStack(ModItems.steelIngot);
-		ItemStack steelSwordStack = new ItemStack(ModItems.steelSword,1, OreDictionary.WILDCARD_VALUE);
+		ItemStack steelSwordGeneralStack = new ItemStack(ModItems.steelSword,1, OreDictionary.WILDCARD_VALUE);
 		ItemStack steelHiltStack = new ItemStack(ModItems.steelHilt);
 		ItemStack steelGuardStack = new ItemStack(ModItems.steelGuard);
 		ItemStack steelBladeStack = new ItemStack(ModItems.steelBlade);
-		ItemStack steelSwordNBTStack = new ItemStack(ModItems.steelSword);
+		ItemStack steelSwordStack = new ItemStack(ModItems.steelSword);
 
 		//Vanilla-Stacks
         ItemStack cobbleStack = new ItemStack(Blocks.cobblestone);
         ItemStack coalStack = new ItemStack(Items.coal);
         ItemStack ironStack = new ItemStack(Items.iron_ingot);
+
+		/**
+		 * NBT-Tags to allot to the ItemStacks
+		 */
+		NBTHelper.setInteger(steelSwordStack,ItemSteelSword.TAG_TEMPERATURE,0);
+
+		/**
+		 * The Recipes. Finally...
+		 */
 
 		//Rocks to cobblestone:
         GameRegistry.addShapedRecipe(cobbleStack, "xx", "xx", 'x', rockStack);
@@ -56,12 +65,11 @@ public class Recipes
 		GameRegistry.addShapedRecipe(steelBladeStack, " s ","scs", "scs", 'c', superCobbleStack, 's', steelStack);
 
 		//Steel Sword Recipe:
-		GameRegistry.addShapedRecipe(steelSwordNBTStack, "  b"," g ","h  ",
+		GameRegistry.addShapedRecipe(steelSwordStack, "  b"," g ","h  ",
 											'b', steelBladeStack, 'g', steelGuardStack, 'h', steelHiltStack);
 
-		//Sword to NBT Sword:
-		GameRegistry.addShapelessRecipe(steelSwordNBTStack,steelSwordStack);
+		//Heating the Sword:
+		ItemSteelSword.heatSword();
 
 	}
-
 }

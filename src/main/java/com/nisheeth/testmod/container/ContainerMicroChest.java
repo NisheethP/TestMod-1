@@ -1,8 +1,13 @@
 package com.nisheeth.testmod.container;
 
-/**
- * Created by anil on 10-08-2014.
- */
-public class ContainerMicroChest
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.Container;
+
+public class ContainerMicroChest extends Container
 {
+	@Override
+	public boolean canInteractWith(EntityPlayer p_75145_1_)
+	{
+		return true;
+	}
 }
